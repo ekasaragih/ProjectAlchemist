@@ -1,0 +1,522 @@
+﻿::selection {
+    background-color: #EBF2E1;
+    color: #8DB596;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+.nav-tabs a.nav-link.active {
+    color: #568259 !important;
+    font-weight: bold;
+}
+
+ul li.list-group-item p {
+    font-size: 13px;
+}
+
+.image-container {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(0.8);
+}
+
+.tab-transition {
+    transition: all 0.3s ease;
+}
+
+.badge-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.badge-soft-warning {
+    color: #f1b44c;
+    background-color: rgba(241, 180, 76, .18);
+}
+
+.badge-success {
+    background-color: #2dce89;
+    color: #fff;
+}
+
+.badge-soft-success {
+    color: #34c38f;
+    background-color: rgba(52, 195, 143, .18);
+}
+
+.badge-warn-subtle {
+    color: #e9bc18;
+    background-color: #fcf5dc;
+}
+
+.badge-info-subtle {
+    color: #179faa;
+    background-color: #dcf1f2;
+}
+
+.badge-secondary-subtle {
+    color: #438eff;
+    background-color: #e3eeff;
+}
+
+.badge-primary-subtle {
+    color: #5a58eb;
+    background-color: #e6e6fc;
+    transition: all 0.3s ease-in;
+}
+
+.badge-danger-subtle {
+    color: #f9554c;
+    background-color: #fee6e4;
+}
+
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.btnGreen {
+    color: #fff;
+    background: #0A5C36;
+    border-color: #0A5C36;
+    padding: 10px;
+    transition: 0.3s ease;
+}
+
+.btnGreen:hover {
+    background: #0F5132 !important;
+    color: #fff;
+    border-color: #0F5132;
+}
+
+.btnGreen:active {
+    background: #0F5132;
+    color: #000;
+    border-color: #0F5132;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btnGreen:disabled {
+    color: #000;
+    background: #0A5C36;
+    border-color: #0A5C36;
+}
+
+.rubik-font {
+    font-family: 'Rubik', sans-serif;
+}
+
+.card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 0;
+    --bs-card-border-color: rgba(0, 0, 0, 0.125);
+    --bs-card-border-radius: 1rem;
+    --bs-card-box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+    --bs-card-inner-border-radius: 1rem;
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: #fff;
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+}
+
+.card .rubik-font h3,
+.card .rubik-font p {
+    font-family: 'Rubik', sans-serif;
+}
+
+.fixed-blob {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 300px;
+}
+
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background-image: url('https://thumb.tildacdn.com/tild6230-3534-4130-a532-366165386334/-/format/webp/_.png');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    background-size: cover;
+    background-position: left bottom;
+    height: 400px;
+    z-index: -1;
+}
+
+.input-div {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dotted black;
+    background-color: white;
+    position: relative;
+}
+
+.file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #8DB596;
+    border: none;
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.saved-div,
+.queued-div {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px dotted black;
+    background-color: white;
+}
+
+.saved-div .image,
+.queued-div .image {
+    height: 150px;
+    max-width: 237px;
+    /*delete it for erase the fix width image*/
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+.saved-div .image:nth-child(4n),
+.queued-div .image:nth-child(4n) {
+    margin-right: 0;
+}
+
+.saved-div .image img,
+.queued-div .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.saved-div .image span,
+.queued-div .image span {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    background-color: red;
+    /* Set the background color to red */
+    border-radius: 50%;
+    /* Create a circular background */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    /* Vertically center the X inside the circle */
+}
+
+.saved-div .image span:hover,
+.queued-div .image span:hover {
+    opacity: 0.8;
+}
+
+.saved-div .span--hidden,
+.queued-div .span--hidden {
+    visibility: hidden;
+}
+
+.queued-image {
+    position: relative;
+    height: 150px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.queued-image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: background 0.4s, opacity 0.4s;
+}
+
+.img-hover:hover {
+    opacity: 0.7;
+}
+
+.icon-left {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.icon-right {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.icon-left li,
+.icon-right li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.icon-left a:hover,
+.icon-right a:hover {
+    opacity: 0.6;
+}
+
+.image-container:hover .image-overlay {
+    display: block;
+}
+
+.image-container:hover .img-hover,
+.image-container:hover .icon-left,
+.image-container:hover .icon-right {
+    opacity: 1;
+}
+
+
+/* Custom Checkbox Styling */
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #707070;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.custom-checkbox::before {
+    content: "\2713";
+    /* Unicode checkmark character */
+    font-size: 16px;
+    font-weight: bold;
+    color: #707070;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.form-check-input:checked+.custom-checkbox::before {
+    display: block;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-image: none;
+}
+
+body {
+    color: #67748e;
+}
+
+.edit-info {
+    color: #5e72e4;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit-info:hover {
+    opacity: 0.6;
+}
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+input {
+    border: none;
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+.tag-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+
+.tag {
+    pointer-events: none;
+    background-color: #5e72e4;
+    color: white;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.tag::before {
+    pointer-events: all;
+    display: inline-block;
+    content: 'x';
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+    text-align: center;
+    color: #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tag:hover::before {
+    background-color: #666;
+}
+
+button.plan-check,
+button.plan-cancel {
+    display: none;
+}
+
+button.member-check,
+button.member-cancel {
+    display: none;
+}
+
+button.reason-check,
+button.reason-cancel {
+    display: none;
+}
+
+.swal2-popup {
+    font-family: 'Rubik', sans-serif;
+}

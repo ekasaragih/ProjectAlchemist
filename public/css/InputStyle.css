@@ -1,0 +1,638 @@
+﻿::selection {
+    background-color: #EBF2E1;
+    color: #8DB596;
+}
+
+.base {
+    width: 1000px;
+}
+
+
+/*form styles*/
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#msform fieldset .form-card {
+    background: white;
+    padding: 20px 40px 30px 40px;
+    width: 950px;
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    margin: 0;
+    padding-bottom: 20px;
+    /*stacking fieldsets above each other*/
+    position: relative;
+}
+
+
+/*Hide all except first fieldset*/
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9e9e9e;
+}
+
+#msform .action-button {
+    width: 120px;
+    background-color: #8DB596;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #8DB596;
+}
+
+
+/*Previous Buttons*/
+
+#msform .action-button-previous {
+    width: 120px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+}
+
+
+/*Previous Buttons*/
+
+#msform .btn-draft {
+    width: 120px;
+    background: #6f42c1;
+    opacity: 0.6;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .btn-draft:hover,
+#msform .btn-draft:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #6f42c1;
+}
+
+.image-container {
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+    transform: scale(0.8);
+}
+
+input[type="button"],
+input[type="submit"] {
+    font-size: 15px;
+}
+
+input[type="text"]::placeholder {
+    text-transform: none;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
+
+
+/* Styles for warning badges */
+
+.badge-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.badge-success {
+    background-color: #2dce89;
+    color: #fff;
+}
+
+
+/* Styles for rounding badge corners */
+
+.rounded-pill {
+    border-radius: 50rem;
+}
+
+.badge-dark {
+    background-color: #333333;
+}
+
+.badge-rounded {
+    border-radius: 1.25rem;
+    padding: 0.1875rem 0.8125rem;
+}
+
+.badge {
+    line-height: 1.3;
+    border-radius: 0.25rem;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border: 0.0625rem solid transparent;
+}
+
+.badge {
+    --bs-badge-padding-x: 0.65em;
+    --bs-badge-padding-y: 0.35em;
+    --bs-badge-font-size: 0.75em;
+    --bs-badge-font-weight: 700;
+    --bs-badge-color: #fff;
+    --bs-badge-border-radius: 0.75rem;
+    display: inline-block;
+    padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+    font-size: var(--bs-badge-font-size);
+    font-weight: var(--bs-badge-font-weight);
+    line-height: 1;
+    color: var(--bs-badge-color);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: var(--bs-badge-border-radius);
+}
+
+
+/* Styles for displaying badges inline */
+
+.d-inline {
+    display: inline;
+}
+
+
+/*The background card*/
+
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+
+/*FieldSet headings*/
+
+.fs-title {
+    font-size: 25px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+/*progressbar*/
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+    width: 700px;
+}
+
+#progressbar .active {
+    color: #000000;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 14px;
+    width: 30%;
+    float: left;
+    position: relative;
+}
+
+
+/*Icons in the ProgressBar*/
+
+#progressbar #information:before {
+    font-family: FontAwesome;
+    content: "\f12a";
+}
+
+#progressbar #members:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #activity:before {
+    font-family: FontAwesome;
+    content: "\f274";
+}
+
+
+/*ProgressBar before any progress*/
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+
+/*ProgressBar connectors*/
+
+#progressbar li:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1;
+}
+
+
+/*Color number of the step and the connector before it*/
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background-color: #8DB596;
+}
+
+
+/* Custom Checkbox Styling */
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.custom-checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #f5365c;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.custom-checkbox::before {
+    content: "\2713";
+    /* Unicode checkmark character */
+    font-size: 16px;
+    font-weight: bold;
+    color: #F07E97;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.form-check-input:checked+.custom-checkbox::before {
+    display: block;
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-image: none;
+}
+
+.mt {
+    margin-top: 15px;
+}
+
+.mr {
+    margin-right: 15px;
+}
+
+.wrapper {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+input {
+    border: none;
+    padding: 12px;
+    margin: 0;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    color: black;
+}
+
+.tag-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 5px;
+    margin-top: 6px;
+    text-transform: uppercase;
+}
+
+.tag {
+    pointer-events: none;
+    background-color: #5e72e4;
+    color: white;
+    padding: 6px;
+    margin: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.tag::before {
+    pointer-events: all;
+    display: inline-block;
+    content: 'x';
+    height: 20px;
+    width: 20px;
+    margin-right: 6px;
+    text-align: center;
+    color: #ccc;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.tag:hover::before {
+    background-color: #666;
+}
+
+.rubik-font {
+    font-family: 'Rubik', sans-serif;
+}
+
+input[type=button],
+input[type=submit] {
+    letter-spacing: 1px;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80%;
+    background-size: cover;
+    background-position: left bottom;
+    height: 400px;
+    z-index: -1;
+}
+
+.input-div {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px dotted black;
+    background-color: white;
+    position: relative;
+}
+
+.file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    color: #5e72e4;
+    border: none;
+    padding: 10px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.saved-div,
+.queued-div {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px dotted black;
+    background-color: white;
+}
+
+.saved-div .image,
+.queued-div .image {
+    height: 150px;
+    max-width: 237px;
+    /*delete it for erase the fix width image*/
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    position: relative;
+}
+
+.saved-div .image:nth-child(4n),
+.queued-div .image:nth-child(4n) {
+    margin-right: 0;
+}
+
+.saved-div .image img,
+.queued-div .image img {
+    height: 100%;
+    width: 100%;
+}
+
+.saved-div .image span,
+.queued-div .image span {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    background-color: red;
+    /* Set the background color to red */
+    border-radius: 50%;
+    /* Create a circular background */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    /* Vertically center the X inside the circle */
+}
+
+.saved-div .image span:hover,
+.queued-div .image span:hover {
+    opacity: 0.8;
+}
+
+.saved-div .span--hidden,
+.queued-div .span--hidden {
+    visibility: hidden;
+}
+
+.queued-image {
+    position: relative;
+    height: 150px;
+    width: auto;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    background-color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.queued-image-container {
+    display: inline-block;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    transition: background 0.4s, opacity 0.4s;
+}
+
+.img-hover:hover {
+    opacity: 0.7;
+}
+
+.icon-left {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.icon-right {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.icon-left li,
+.icon-right li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.icon-left a:hover,
+.icon-right a:hover {
+    opacity: 0.6;
+}
+
+.image-container:hover .image-overlay {
+    display: block;
+}
+
+.image-container:hover .img-hover,
+.image-container:hover .icon-left,
+.image-container:hover .icon-right {
+    opacity: 1;
+}
