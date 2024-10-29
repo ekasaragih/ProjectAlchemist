@@ -21,7 +21,7 @@
 @endsection
 
 @section('content')
-@include('layouts.navbar.topnav', ['title' => 'User List'])
+@include('layouts.navbar.topnav', ['title' => 'Member List'])
 <div class="container">
     <CENTER>
         <img style="width: 400px; margin-top: -50px;" src="https://themesbrand.com/skote-mvc/layouts/assets/images/profile-img.png" alt="Draft Image" class="img-draft">
@@ -184,7 +184,6 @@
                     _token: '{{ csrf_token() }}',
                     us_name: name,
                     us_username: username,
-                    // us_email: email,
                     us_stat: status,
                     grp_ID: role
                 },
